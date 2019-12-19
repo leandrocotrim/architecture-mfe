@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <script src="/scripts/angular/angular.min.js"></script>
+    <script src="/scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/scripts/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="/app/app.module.js"></script>
+    <script src="/app/service/people.service.js"></script>
+    <script src="/app/component/hello.component.js"></script>
+    <script src="/app/component/about.component.js"></script>
+    <script src="/app/component/people.component.js"></script>
+    <script src="/app/component/person.component.js"></script>
+</head>
+
+<body>
+    <base href="/">
+    <h1>Hompage...</h1>
+
+    <div class="nav">
+        <a ui-sref="hello" ui-sref-active="active">Hello</a>
+        <a ui-sref="about" ui-sref-active="active">About</a>
+        <a ui-sref="people" ui-sref-active="active">People</a>
+    </div>
+
+    <ui-view></ui-view>
+</body>
+
+</html>
