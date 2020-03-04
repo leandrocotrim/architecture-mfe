@@ -1,9 +1,12 @@
 angular
     .module('app')
     .component('hello', {
-        template:
-            '<h3>{{$ctrl.greeting}} galaxy!</h3><button ng-click="$ctrl.toggleGreeting()">toggle greeting</button>',
-
+        template: `
+            <h3>{{$ctrl.greeting}} galaxy!</h3>
+            <button ng-click="$ctrl.toggleGreeting()">
+                toggle greeting
+            </button>
+        `,
         controller: function () {
             this.greeting = 'Oi';
 
