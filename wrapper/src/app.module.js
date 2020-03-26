@@ -41,6 +41,9 @@ app.config(
                             });
                         }
                     }
+                },
+                {
+                    name: 'react', url: '/react',  component: 'react' 
                 }
             ];
 
